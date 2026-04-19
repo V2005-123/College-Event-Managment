@@ -1,0 +1,165 @@
+.dashboard-page {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.dashboard-header {
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.dashboard-header p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  padding: 24px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.stat-icon-wrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-icon-wrapper.blue {
+  background-color: rgba(14, 165, 233, 0.15);
+  color: #0ea5e9;
+}
+
+.stat-icon-wrapper.green {
+  background-color: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+}
+
+.stat-icon-wrapper.purple {
+  background-color: rgba(168, 85, 247, 0.15);
+  color: #a855f7;
+}
+
+.stat-info h3 {
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.registered-events-section {
+  padding: 30px;
+  border-radius: var(--radius-lg);
+}
+
+.registered-events-section h2 {
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+}
+
+.registration-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.registration-item {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.registration-item:hover {
+  transform: translateX(5px);
+  border-color: var(--primary);
+}
+
+.reg-image {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.reg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reg-details {
+  flex: 1;
+}
+
+.reg-details h4 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.reg-meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.upcoming {
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+}
+
+.reg-actions {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .registration-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .reg-actions {
+    width: 100%;
+  }
+  .reg-actions .btn {
+    width: 100%;
+  }
+}

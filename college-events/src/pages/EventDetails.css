@@ -1,0 +1,144 @@
+.event-details-page {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: var(--primary);
+}
+
+.event-details-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.event-hero-image {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 30px;
+  height: 400px;
+}
+
+.event-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--primary);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.event-description-box {
+  padding: 30px;
+  border-radius: var(--radius-md);
+}
+
+.event-description-box h2 {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+.event-description-box p {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.registration-card {
+  padding: 30px;
+  border-radius: var(--radius-lg);
+  position: sticky;
+  top: 90px;
+}
+
+.registration-card .event-title {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.event-price-large {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 24px;
+}
+
+.event-meta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.meta-icon {
+  color: var(--secondary);
+  margin-top: 4px;
+}
+
+.meta-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.meta-value {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.registration-note {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 16px;
+}
+
+.event-not-found {
+  padding: 100px 0;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .event-details-grid {
+    grid-template-columns: 1fr;
+  }
+  .registration-card {
+    position: static;
+  }
+  .event-hero-image {
+    height: 300px;
+  }
+}

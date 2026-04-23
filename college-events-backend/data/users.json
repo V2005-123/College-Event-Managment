@@ -1,0 +1,14 @@
+[
+  {
+    "email": "admin@wit.edu",
+    "password": "admin123",
+    "role": "admin",
+    "name": "Admin"
+  },
+  {
+    "email": "student@wit.edu",
+    "password": "password123",
+    "role": "student",
+    "name": "Student"
+  }
+]

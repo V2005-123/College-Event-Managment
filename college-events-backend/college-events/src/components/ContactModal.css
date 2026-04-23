@@ -1,0 +1,63 @@
+.contact-modal-container {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: #0f172a;
+}
+
+.contact-success {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contact-success h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.contact-success p {
+  color: #475569;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.contact-form-section h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.contact-subtitle {
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.contact-form .form-group label {
+  color: #334155;
+  font-weight: 600;
+}
+
+.contact-form .form-control {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #0f172a;
+}
+
+.contact-form .form-control:focus {
+  border-color: var(--primary);
+  background: #ffffff;
+}
+
+.contact-form .form-control::placeholder {
+  color: #94a3b8;
+}
+
+.mt-4 {
+  margin-top: 24px;
+}
